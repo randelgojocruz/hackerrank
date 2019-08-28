@@ -1,2 +1,2 @@
 # training
-training for new technologies
+training for new technologies master branch
