@@ -10,8 +10,22 @@ public class SockMerchant {
 
     // Complete the sockMerchant function below.
     static int sockMerchant(int n, int[] ar) {
+        int matched = 0;
+        List<Integer> matchedIndexList = new ArrayList<Integer>();
+        for(int i=0; i<n; i++){
+            int currentn = ar[i];
 
+            for(int inext=i+1;inext <n; inext++){
+                if(ar[inext]==currentn && !matchedIndexList.contains(i) && !matchedIndexList.contains(i) ){
+                    matched++;
+                    matchedIndexList.add(i);
+                    matchedIndexList.add(inext);
+                }
+                 
+            }
 
+        }
+        return matched;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
